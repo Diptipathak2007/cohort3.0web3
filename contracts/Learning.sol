@@ -58,3 +58,14 @@ pragma solidity ^0.8.13;
         //return "this is a car";
     //}
 //}
+
+//contract to understand mappings
+contract NameRegistry{
+    mapping(address=>string)public names;
+    function setName(string memory _name)public{
+        names[msg.sender]=_name;
+    }
+    function getName(address _addr)public view returns(string memory){
+        return names[_addr];
+    }
+}

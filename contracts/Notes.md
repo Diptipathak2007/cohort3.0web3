@@ -47,3 +47,7 @@ a transaction and are considered as "non-view" functions
 and do not consume gas when called externally via a call
 
 Inheritance:
+
+Mappings:
+In solidity,a mapping is a data structure that allows you to store and look up key-value pairs.its similar to hash table or dictionary in other programming
+languages
