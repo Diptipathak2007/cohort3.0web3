@@ -33,3 +33,17 @@ internal. yes.           yes               no                 No
 private   yes.           no                no                 No
 
 
+View keyword in functions:
+In solidity,the view keyword indicates that the function does not modify the state of the blockchain.
+
+It is a type of function modifier that tells the ethereum virtual machine that the function is read-only and will not
+alter any state variables or perform any operations that would require a transaction.
+
+Types of functions:
+1.state-changing functions:functions that modify state variables,interact with other contracts,or send/recieve ether require
+a transaction and are considered as "non-view" functions
+
+2.view functions:These are functions that are only read from the blockchain state(like reading a variable but do not mofigy it).They can be called without creating a transaction
+and do not consume gas when called externally via a call
+
+Inheritance:

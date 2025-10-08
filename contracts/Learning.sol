@@ -10,8 +10,9 @@ pragma solidity ^0.8.13;
     address harkirat=0xbF418c1822274015B142715799C24B4Cb576866e;
 }*/
 
+
 //contract to understand constructor
-contract calculator{
+/*contract calculator{
     uint256 currentvalue;
     constructor (uint256 payablevalue){
         currentvalue=payablevalue;//set the intiial value it is done to avoid the name conflict
@@ -33,4 +34,27 @@ contract calculator{
         return currentvalue;
     }
    
-}
+}*/
+
+//contract that helps you understand inheritance
+/*contract Vehicle{
+    string public brand;
+
+    constructor(string memory _brand){
+        brand=_brand;
+    }
+    function description()public pure virtual returns (string memory){
+        return "this is a vehicle";//virtual simply means that the function can be overridden by a child class child class will write overwrite instead of virtual
+    }
+}*/
+
+//child contract of this
+//import "./Vehicle.sol"
+//const car is Vehicle{
+    //constructor(string memory _brand)Vehicle(_brand){
+        //brand=_brand;
+    //}
+    //function description()public pure override returns(string memory){
+        //return "this is a car";
+    //}
+//}
