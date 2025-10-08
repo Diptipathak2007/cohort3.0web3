@@ -23,3 +23,13 @@ Constructor:
 A constructor in solidity is a special function that is executed only once during the deployment of the contract,
 Its primary purpose is to initailize the contract's state variables and set up any required logic when the 
 contract is deployed to etherum blockchain
+
+Functions visibilty types:
+public,private,internal,external
+         same contact   derived contracts  other contracts.  external users
+public.   yes.           yes               yes                yes
+external. no             no                yes                yes 
+internal. yes.           yes               no                 No
+private   yes.           no                no                 No
+
+
