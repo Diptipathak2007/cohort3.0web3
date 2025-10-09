@@ -69,3 +69,17 @@ pragma solidity ^0.8.13;
         return names[_addr];
     }
 }*/
+
+//contract to understand events
+contract EventExample {
+
+    // Declare an event
+    event Transfer(address indexed from, address indexed to, uint256 value);//indexed is used to search for all the speocofc transactions related to that user
+
+    // Corrected function name
+    function emitTransfer(address to, uint256 value) public {
+        emit Transfer(msg.sender, to, value);
+    }
+}
+
+

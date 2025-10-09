@@ -82,3 +82,24 @@ The stack in solidity is a limited,low-level data structure used to store small,
 a function.it is akin to a "call stack" in other programming languages.when you call a function,the evm pushes temporary values(uch as function
 arguments and local variables)onto the stack.
 
+MODIFIERS:
+in solidity,modifiers are a powerful feature that allows you to modify the behaviour of functions in a reusable and declarative way.they are
+used to add additional checks or functionality to a function or groups of functions,before or after the main logic is executed
+
+syntax:
+modifier onlyowner(){
+    require(owner==msg.sender);
+    _;
+}
+Returning tuples:
+return(var1,var2,var3)=>syntax
+
+Pure functions:
+in solidity,pure functions are functions that do not read form or modify the blockchain state.They only rely on there input parameters to 
+perform calculations and operations and return a result.importatnly pure functions do not interact with any state variables or external
+contracts.
+
+Events:
+In ethereum,events are a mechanism that allows smart contracts to log information on the blockchain,which can then be accessed by external
+consumers(eg:frontendapplications,other contracts or off chain services like oracles).Events enable smart contracts to emit logs that can be used for
+debugging,indexing or triggering external actions based on contract activity.
