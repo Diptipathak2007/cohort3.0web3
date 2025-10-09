@@ -60,7 +60,7 @@ pragma solidity ^0.8.13;
 //}
 
 //contract to understand mappings
-contract NameRegistry{
+/*contract NameRegistry{
     mapping(address=>string)public names;
     function setName(string memory _name)public{
         names[msg.sender]=_name;
@@ -68,4 +68,4 @@ contract NameRegistry{
     function getName(address _addr)public view returns(string memory){
         return names[_addr];
     }
-}
+}*/

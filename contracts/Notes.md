@@ -51,3 +51,34 @@ Inheritance:
 Mappings:
 In solidity,a mapping is a data structure that allows you to store and look up key-value pairs.its similar to hash table or dictionary in other programming
 languages
+
+there are two types of arrays in solidity
+1.fixed size arrays-arrays where the size is defined when the array is created,and it cannot be changed afterwards
+2.dynamic arrays-arrays where the size can change dynamically durning execution
+
+Struct:
+In solidity,a struct is a custom data type that allows you to group multiple variables(of different types )together into 
+a single unit
+
+Memory vs stack vs storage
+In solidity,memory,stack and storage are three different locations where data can be stored.each has its own charcateristics,use cases 
+and costs
+
+1.Storage:
+storage refers to the persistent data that is saved on the blockchain.it is used for state variables that you declare at the 
+contract level Data stored in storage is written to the blockchain and remains there permanently,across function calls and transactions,until
+it is explicitly modified
+
+writing to storage is costly in terms of gas because it requires changes to the blockchain state,which involves network consensus and storage
+allocation on the blockchain.
+
+2.Memory
+Memory refrers to temporary data storage that only exists during the execution of a function.it is cheaper than storage because it is not 
+stored on blockchain and is only kept in the node,s memory while the function is executing.once the function finishes the execution,the data 
+is discarded
+
+3.stack
+The stack in solidity is a limited,low-level data structure used to store small,temporary values that are used during the execution of 
+a function.it is akin to a "call stack" in other programming languages.when you call a function,the evm pushes temporary values(uch as function
+arguments and local variables)onto the stack.
+
