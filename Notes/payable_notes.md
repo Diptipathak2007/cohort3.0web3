@@ -23,3 +23,7 @@ a.interfaces can only inherit from other interfaces
 4.Interactions with other contracts:
 a.interfaces are commonly used to interact with already deployed contracts,enabling modularity
 and upgradability
+
+Payables:
+In solidity,Payables refer to functions or addresses that are capable of recieving ether(eth)transfers.soliidty is ethereum's programming
+language,and ether is the native cryptocurrency of the ethereum network.
